@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水果購物網</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.js"></script>
+    <meta name="description" content="歡迎來到日清商行!這邊有各種新鮮好吃的水果任君選購" />
+    <meta name="keywords" content="水果,禮盒,中秋節,日清,日清商行,熱銷,產地直送,國外直送" />    
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="header"><h1><a href="index.html">歡迎來到日清商行!這邊有各種新鮮好吃的水果任君選購~~</a></h1></div>
+        <div id="vue">
+          <cart :cart="cart" :cart-sub-total="cartSubTotal" :tax="tax" :cart-total="cartTotal" :checkout-bool="checkoutBool"></cart>
+          <products :cart="cart" :cart-sub-total="cartSubTotal" :tax="tax" :cart-total="cartTotal" :products-data="productsData"></products>
+          <checkout-area v-if="checkoutBool" :cart="cart" :tax="tax" :cart-sub-total="cartSubTotal" :cart-total="cartTotal" :products-data="productsData" :total-with-tax="totalWithTax"></checkout-area>
+        </div>
+      </div>
+      <div class="footer">
+        <ul style="list-style-type: none">
+          <li>門市地址 :  台中市西屯區中清路一段 4 號<br>
+            門市電話 : ( 04 ) 2258-7070<br> 
+            營業時間 : 早上 08:00 至晚上 20:00　全年無休</li>
+          <li>
+            &copy; 2024 日清商行. All rights reserved.<br>
+    網站內容及設計均屬日清商行版權所有，未經許可不得轉載、複製或使用。
+          </li>
+        </ul>
+      </div>
+      <script src="allshoppingcar.js"></script>
+</body>
+</html>
