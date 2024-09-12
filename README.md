@@ -1,8 +1,9 @@
 # fruitshop.github.io
 簡介：設計一個水果電商的響應式網站，用vue.js設計出購物車，包括商品展示、購物車管理和結帳流程。它使用了Vue.js的核心特性，如組件、指令、事件處理和響應式數據綁定
-技術： HTML、CSS、JavaScript、Bootstrap、RWD、Vue.js
-成果： 
 
+技術： HTML、CSS、JavaScript、Bootstrap、RWD、Vue.js
+
+成果： 
 -Bootstrap：使用Bootstrap簡化頁面樣式的設置，如處理登入/註冊對話框和
 模態框時。響應式設計能幫助確保網站在各種設備上的良好顯示。
 
