@@ -344,11 +344,11 @@ Vue.component('checkout-area', {
   "<div class='overlay' @click='hideModal()'></div>" + 
   "<div class='modal checkout'>" + 
   "<i class='close fa fa-times' @click='hideModal()'></i>" + 
-  "<h1>Checkout</h1>" +
-  "<div>We accept: <i class='fa fa-stripe'></i> <i class='fa fa-cc-visa'></i> <i class='fa fa-cc-mastercard'></i> <i class='fa fa-cc-amex'></i> <i class='fa fa-cc-discover'></i></div><br>" +
-  "<h3> Subtotal: {{ cartSubTotal | currency }} </h3>" +
-  "<h3> Tax: {{ cartTotal - cartSubTotal | currency }} </h4>" +
-  "<h1> Total: {{ cartTotal | currency }} </h3>" +
+  "<h1>結帳</h1>" +
+  "<div>我們接受: <i class='fa fa-stripe'></i> <i class='fa fa-cc-visa'></i> <i class='fa fa-cc-mastercard'></i> <i class='fa fa-cc-amex'></i> <i class='fa fa-cc-discover'></i></div><br>" +
+  "<h3> 原價: {{ cartSubTotal | currency }} </h3>" +
+  "<h3> 稅 {{ cartTotal - cartSubTotal | currency }} </h4>" +
+  "<h1> 總計: {{ cartTotal | currency }} </h3>" +
   "<br><div>This is where our payment processor goes</div>" +
   "</div>",
 
