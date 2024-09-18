@@ -519,6 +519,11 @@ button.search-btn {width: auto;
     height: auto;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5em;
+  }
+}
 
 /* 平板及以上 */
 @media (min-width: 768px) {
